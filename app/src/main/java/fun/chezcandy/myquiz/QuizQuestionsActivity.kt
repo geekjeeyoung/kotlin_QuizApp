@@ -3,6 +3,8 @@ package `fun`.chezcandy.myquiz
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.View
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
@@ -12,6 +14,12 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswer: Int = 0
+
+    private lateinit var tvOptionOne: TextView
+    private lateinit var tvOptionTwo: TextView
+    private lateinit var tvOptionThree: TextView
+    private lateinit var tvOptionFour: TextView
+    private lateinit var btnSubmit: Button
 
 
     // ToDo (Step 3: Create a variable for getting the name from intent.)
@@ -28,8 +36,18 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
         mUserName = intent.getStringExtra(Constants.USER_NAME)
 
         mQuestionsList = Constants.getQuestions()
-        
 
+        tvOptionOne = findViewById(R.id.tv_option_one)
+        tvOptionTwo = findViewById(R.id.tv_option_two)
+        tvOptionThree = findViewById(R.id.tv_option_three)
+        tvOptionFour = findViewById(R.id.tv_option_four)
+        btnSubmit = findViewById(R.id.btn_submit)
+
+        setQuestion()
+    }
+
+    private fun setQuestion() {
+        TODO("Not yet implemented")
     }
 
     override fun onClick(v: View?) {

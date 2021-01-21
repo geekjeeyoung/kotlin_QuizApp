@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bg"
-    android:orientation="vertical"
+    android:background="@drawable/ic_bg2"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:padding="20dp"
     tools:context=".ResultActivity">
 
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Congratulations!"
-        android:textColor="@android:color/white"
+        android:textColor="#2C2A2A"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textColor="@android:color/white"
+        android:textColor="#2C2A2A"
         android:textSize="25sp"
         android:textStyle="bold"
         tools:text="Username" />
@@ -52,7 +52,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textColor="@android:color/secondary_text_dark"
+        android:shadowColor="#2C2A2A"
+        android:textColor="#2C2A2A"
         android:textSize="20sp"
         tools:text="Your Score is 9 out of 10" />
 

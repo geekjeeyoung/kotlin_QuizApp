@@ -12,7 +12,7 @@ class ResultActivity : AppCompatActivity() {
 
     private lateinit var tvResult: TextView
     private lateinit var ivTrophy: ImageView
-    private lateinit var tvCongratulations: TextView
+
     private lateinit var tvName: TextView
     private lateinit var tvScore: TextView
     private lateinit var btnFinal: Button
@@ -23,7 +23,7 @@ class ResultActivity : AppCompatActivity() {
 
         tvResult = findViewById(R.id.tv_result)
         ivTrophy = findViewById(R.id.iv_trophy)
-        tvCongratulations = findViewById(R.id.tv_congratulations)
+
         tvName = findViewById(R.id.tv_name)
         tvScore = findViewById(R.id.tv_score)
         btnFinal = findViewById(R.id.btn_final)
